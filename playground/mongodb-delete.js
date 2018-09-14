@@ -9,15 +9,15 @@ MongoClient.connect('mongodb://localhost:27017', { useNewUrlParser: true }, (err
 
   //deleteMany
 
-  // db.collection('Users').deleteMany({name: 'Andrew'}).then((result) => {
-  //   console.log(result);
-  // });
+  db.collection('Users').deleteMany({name: 'Andrew'}).then((result) => {
+    console.log(result);
+  });
 
   // deleteOne
 
-  // db.collection('Todos').deleteOne({text: 'Eat lunch'}).then((result) => {
-  //   console.log(result);
-  // });
+  db.collection('Todos').deleteOne({text: 'Eat lunch'}).then((result) => {
+    console.log(result);
+  });
 
   //findOneAndDelete
 
