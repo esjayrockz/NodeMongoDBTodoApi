@@ -16,22 +16,22 @@ Correct Steps to access API:
 * User authentication is implemented using JWTs, Auth Tokens and Hashing so the routes will not be accessible without a token.
 
 API routes.
-* For User requests.
+For User requests.
 * Register: POST https://evening-eyrie-48193.herokuapp.com/users
 * Get back your details: GET https://evening-eyrie-48193.herokuapp.com/users/me
 * Login: POST https://evening-eyrie-48193.herokuapp.com/users/login
 * Delete your details: DELETE https://evening-eyrie-48193.herokuapp.com/users/me/token
 
-* For Todo requests.
+For Todo requests.
 * Get your todos: GET https://evening-eyrie-48193.herokuapp.com/todos
 * Create a new todo: POST https://evening-eyrie-48193.herokuapp.com/todos
 * Update a todo: PATCH https://evening-eyrie-48193.herokuapp.com/todos/:id
 * Get a specific todo: GET https://evening-eyrie-48193.herokuapp.com/todos/:id
 * Delete a specific todo: DELETE https://evening-eyrie-48193.herokuapp.com/todos/:id
 
-Further details to access API are as follows:
+Further guides to access API are as follows:
 
-* Access User details:
+Access User details:
 
 * Register: In order to access a token, you must first register at https://evening-eyrie-48193.herokuapp.com/users
 and by making a POST request to this url and send an email and password in the body.
@@ -41,7 +41,7 @@ Example:
 * Login: You will get a new x-auth token as a header by sending an email and password in the body and making a POST request to https://evening-eyrie-48193.herokuapp.com/users/login . You must use this new x-auth token to access other private routes.
 * Delete your details: You can get delete your id/email by setting the x-auth token as a header and making a DELETE request to https://evening-eyrie-48193.herokuapp.com/users/me/token
 
-* Access your Todos:
+Access your Todos:
 
 * Get your todos: You can get your todos by setting the x-auth token as a header and making a GET request to https://evening-eyrie-48193.herokuapp.com/todos
 * Create a new todo: You can create a new todo by setting the x-auth token as a header and making a POST request to https://evening-eyrie-48193.herokuapp.com/todos. You must send only a text in the body. Example:
